@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/lib/tom-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo1.png" height="70px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-5  mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active1" href="product.html">Products</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="about.html">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+                <form class="d-flex position-relative" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass position-absolute end-0 pe-4 pt-2 fs-4 text-danger"></i>
+                    <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                </form>
+                <div>
+                    <a href="cart.html" class="text-decoration-none position-relative ms-4 fs-3 border-3 rounded-2 fw-bold text-danger">
+                        <i class="fa-solid fa-cart-shopping "> <span class="text-white position-absolute top-0 bg-black p-1 rounded-4" style="font-size: 10px;">2</span></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- ----banner----- -->
+    <section>
+        <div class="container-fluid px-0 z-0 ">
+            <div class="banner-hero vh-100 align-content-center position-relative"
+                style="background-image: url(assets/images/banner.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <span class="w-100 vh-100 top-0 position-absolute bg-black bg-opacity-50"></span>
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 z-3 ">
+                            <div class="banner-txt w-100  ">
+                                <h1 class="py-2 mt-1 text-white fw-bold fs10">All <span class="text-danger"></span>
+                                    Products
+                                </h1>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-body-tertiary">
+        <div class="container  py-4">
+            <div class="text-center pb-4">
+                <h1 class="fs-1 text-danger fw-bold ">All Products</h1>
+                <button class="px-5 py-1 bg-danger border-0"></button>
+            </div>
+            <div class="col-lg-3 pb-4">
+                <div class="w-100">
+                    <select select id="select-state" name="state[]" placeholder=" Search..." autocomplete="off"
+                    class="form-select border text-black border-danger border-2 rounded-4">
+                    <option value="" selected disabled hidden selected>Select category</option>
+                    <option value="home">Men's Clothes</option>
+                    <option value="garden">Women's Clothes</option>
+                    <option value="building">All smart watch</option>
+                    <option value="insect">All fashion shoes</option>
+                </select>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <!-- <div class="col-lg-3 ">
+                    <div class="w-100">
+                        <select select id="select-state" name="state[]" placeholder=" Search..." autocomplete="off"
+                        class="form-select border text-black border-danger border-2 rounded-4">
+                        <option value="" selected disabled hidden selected>Select category</option>
+                        <option value="home">Men's Clothes</option>
+                        <option value="garden">Women's Clothes</option>
+                        <option value="building">All smart watch</option>
+                        <option value="insect">All fashion shoes</option>
+                    </select>
+                    </div>
+                </div> -->
+                <div class="col-lg-3">
+                    <div class="box-product text-center px-3 py-4 position-relative">
+                        <span class="text-white rounded-2 bg-danger px-3 position-absolute end-0 me-3">Stock</span>
+                        <a href="productDetails.html">
+                            <img src="assets/images/p8.png" width="90%" height="260px" alt="">
+                        </a>
+                        <h4 class="py-1 fw-bold">Men's shirts</h4>
+                        <p class="text-danger fw-bold">$ 10.00</p>
+                        <a href="" class="btn rounded-2  text-decoration-none py-2 btn-outline-danger px-5">Add to
+                            Cart</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="box-product text-center px-3 py-4 position-relative">
+                        <span class="text-white rounded-2 bg-danger px-3 position-absolute end-0 me-3">Stock</span>
+                        <a href="productDetails.html">
+                            <img src="assets/images/p5.png" width="90%" height="260px" alt="">
+                        </a>
+                        <h4 class="py-1 fw-bold">Men's shirts</h4>
+                        <p class="text-danger fw-bold">$ 10.00</p>
+                        <a href="" class="btn rounded-2  text-decoration-none py-2 btn-outline-danger px-5">Add to
+                            Cart</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="box-product text-center px-3 py-4 position-relative">
+                        <span class="text-white rounded-2 bg-danger px-3 position-absolute end-0 me-3">Stock</span>
+                        <a href="productDetails.html">
+                            <img src="assets/images/p6.png" width="90%" height="260px" alt="">
+                        </a>
+                        <h4 class="py-1 fw-bold">Men's shirts</h4>
+                        <p class="text-danger fw-bold">$ 10.00</p>
+                        <a href="" class="btn rounded-2  text-decoration-none py-2 btn-outline-danger px-5">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="box-product text-center px-3 py-4 position-relative">
+                        <span class="text-white rounded-2 bg-danger px-3 position-absolute end-0 me-3">Stock</span>
+                        <a href="productDetails.html">
+                            <img src="assets/images/shoes-1.jpg" width="90%" height="260px" alt="">
+                        </a>
+                        <h4 class="py-1 fw-bold">Men's shirts</h4>
+                        <p class="text-danger fw-bold">$ 10.00</p>
+                        <a href="" class="btn rounded-2  text-decoration-none py-2 btn-outline-danger px-5">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="box-product text-center px-3 py-4 position-relative">
+                        <span class="text-white rounded-2 bg-danger px-3 position-absolute end-0 me-3">Stock</span>
+                        <a href="productDetails.html">
+                            <img src="assets/images/shoes-2.jpg" width="90%" height="260px" alt="">
+                        </a>
+                        <h4 class="py-1 fw-bold">Men's shirts</h4>
+                        <p class="text-danger fw-bold">$ 10.00</p>
+                        <a href="" class="btn rounded-2  text-decoration-none py-2 btn-outline-danger px-5">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="box-product text-center px-3 py-4 position-relative">
+                        <span class="text-white rounded-2 bg-danger px-3 position-absolute end-0 me-3">Stock</span>
+                        <a href="productDetails.html">
+                            <img src="assets/images/wat-1.jpg" width="90%" height="260px" alt="">
+                        </a>
+                        <h4 class="py-1 fw-bold">Men's shirts</h4>
+                        <p class="text-danger fw-bold">$ 10.00</p>
+                        <a href="" class="btn rounded-2  text-decoration-none py-2 btn-outline-danger px-5">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="box-product text-center px-3 py-4 position-relative">
+                        <span class="text-white rounded-2 bg-danger px-3 position-absolute end-0 me-3">Stock</span>
+                        <a href="productDetails.html">
+                            <img src="assets/images/wat-2.jpg" width="90%" height="260px" alt="">
+                        </a>
+                        <h4 class="py-1 fw-bold">Men's shirts</h4>
+                        <p class="text-danger fw-bold">$ 10.00</p>
+                        <a href="" class="btn rounded-2  text-decoration-none py-2 btn-outline-danger px-5">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="box-product text-center px-3 py-4 position-relative">
+                        <span class="text-white rounded-2 bg-danger px-3 position-absolute end-0 me-3">Stock</span>
+                        <a href="productDetails.html">
+                            <img src="assets/images/p2.png" width="90%" height="260px" alt="">
+                        </a>
+                        <h4 class="py-1 fw-bold">Men's shirts</h4>
+                        <p class="text-danger fw-bold">$ 10.00</p>
+                        <a href="" class="btn rounded-2  text-decoration-none py-2 btn-outline-danger px-5">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="box-product text-center px-3 py-4 position-relative">
+                        <span class="text-white rounded-2 bg-danger px-3 position-absolute end-0 me-3">Stock</span>
+                        <a href="productDetails.html">
+                            <img src="assets/images/p3.png" width="90%" height="260px" alt="">
+                        </a>
+                        <h4 class="py-1 fw-bold">Men's shirts</h4>
+                        <p class="text-danger fw-bold">$ 10.00</p>
+                        <a href="" class="btn rounded-2  text-decoration-none py-2 btn-outline-danger px-5">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="box-product text-center px-3 py-4 position-relative">
+                        <span class="text-white rounded-2 bg-danger px-3 position-absolute end-0 me-3">Stock</span>
+                        <a href="productDetails.html">
+                            <img src="assets/images/p4.png" width="90%" height="260px" alt="">
+                        </a>
+                        <h4 class="py-1 fw-bold">Men's shirts</h4>
+                        <p class="text-danger fw-bold">$ 10.00</p>
+                        <a href="" class="btn rounded-2  text-decoration-none py-2 btn-outline-danger px-5">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="box-product text-center px-3 py-4 position-relative">
+                        <span class="text-white rounded-2 bg-danger px-3 position-absolute end-0 me-3">Stock</span>
+                        <a href="productDetails.html">
+                            <img src="assets/images/p5.png" width="90%" height="260px" alt="">
+                        </a>
+                        <h4 class="py-1 fw-bold">Men's shirts</h4>
+                        <p class="text-danger fw-bold">$ 10.00</p>
+                        <a href="" class="btn rounded-2  text-decoration-none py-2 btn-outline-danger px-5">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="box-product text-center px-3 py-4 position-relative">
+                        <span class="text-white rounded-2 bg-danger px-3 position-absolute end-0 me-3">Stock</span>
+                        <a href="productDetails.html">
+                            <img src="assets/images/p6.png" width="90%" height="260px" alt="">
+                        </a>
+                        <h4 class="py-1 fw-bold">Men's shirts</h4>
+                        <p class="text-danger fw-bold">$ 10.00</p>
+                        <a href="" class="btn rounded-2  text-decoration-none py-2 btn-outline-danger px-5">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="box-product text-center px-3 py-4 position-relative">
+                        <span class="text-white rounded-2 bg-danger px-3 position-absolute end-0 me-3">Stock</span>
+                        <a href="productDetails.html">
+                            <img src="assets/images/p7.png" width="90%" height="260px" alt="">
+                        </a>
+                        <h4 class="py-1 fw-bold">Men's shirts</h4>
+                        <p class="text-danger fw-bold">$ 10.00</p>
+                        <a href="" class="btn rounded-2  text-decoration-none py-2 btn-outline-danger px-5">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="box-product text-center px-3 py-4 position-relative">
+                        <span class="text-white rounded-2 bg-danger px-3 position-absolute end-0 me-3">Stock</span>
+                        <a href="productDetails.html">
+                            <img src="assets/images/shoes-3.jpg" width="90%" height="260px" alt="">
+                        </a>
+                        <h4 class="py-1 fw-bold">Men's shirts</h4>
+                        <p class="text-danger fw-bold">$ 10.00</p>
+                        <a href="" class="btn rounded-2  text-decoration-none py-2 btn-outline-danger px-5">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="box-product text-center px-3 py-4 position-relative">
+                        <span class="text-white rounded-2 bg-danger px-3 position-absolute end-0 me-3">Stock</span>
+                        <a href="productDetails.html">
+                            <img src="assets/images/shoes-4.jpg" width="90%" height="260px" alt="">
+                        </a>
+                        <h4 class="py-1 fw-bold">Men's shirts</h4>
+                        <p class="text-danger fw-bold">$ 10.00</p>
+                        <a href="" class="btn rounded-2  text-decoration-none py-2 btn-outline-danger px-5">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="box-product text-center px-3 py-4 position-relative">
+                        <span class="text-white rounded-2 bg-danger px-3 position-absolute end-0 me-3">Stock</span>
+                        <a href="productDetails.html">
+                            <img src="assets/images/wat-3.jpg" width="90%" height="260px" alt="">
+                        </a>
+                        <h4 class="py-1 fw-bold">Men's shirts</h4>
+                        <p class="text-danger fw-bold">$ 10.00</p>
+                        <a href="" class="btn rounded-2  text-decoration-none py-2 btn-outline-danger px-5">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="box-product text-center px-3 py-4 position-relative">
+                        <span class="text-white rounded-2 bg-danger px-3 position-absolute end-0 me-3">Stock</span>
+                        <a href="productDetails.html">
+                            <img src="assets/images/wat-4.jpg" width="90%" height="260px" alt="">
+                        </a>
+                        <h4 class="py-1 fw-bold">Men's shirts</h4>
+                        <p class="text-danger fw-bold">$ 10.00</p>
+                        <a href="" class="btn rounded-2  text-decoration-none py-2 btn-outline-danger px-5">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="box-product text-center px-3 py-4 position-relative">
+                        <span class="text-white rounded-2 bg-danger px-3 position-absolute end-0 me-3">Stock</span>
+                        <a href="productDetails.html">
+                            <img src="assets/images/p9.png" width="90%" height="260px" alt="">
+                        </a>
+                        <h4 class="py-1 fw-bold">Men's shirts</h4>
+                        <p class="text-danger fw-bold">$ 10.00</p>
+                        <a href="" class="btn rounded-2  text-decoration-none py-2 btn-outline-danger px-5">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="box-product text-center px-3 py-4 position-relative">
+                        <span class="text-white rounded-2 bg-danger px-3 position-absolute end-0 me-3">Stock</span>
+                        <a href="productDetails.html">
+                            <img src="assets/images/p10.png" width="90%" height="260px" alt="">
+                        </a>
+                        <h4 class="py-1 fw-bold">Men's shirts</h4>
+                        <p class="text-danger fw-bold">$ 10.00</p>
+                        <a href="" class="btn rounded-2  text-decoration-none py-2 btn-outline-danger px-5">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="box-product text-center px-3 py-4 position-relative">
+                        <span class="text-white rounded-2 bg-danger px-3 position-absolute end-0 me-3">Stock</span>
+                        <a href="productDetails.html">
+                            <img src="assets/images/p11.png" width="90%" height="260px" alt="">
+                        </a>
+                        <h4 class="py-1 fw-bold">Men's shirts</h4>
+                        <p class="text-danger fw-bold">$ 10.00</p>
+                        <a href="" class="btn rounded-2  text-decoration-none py-2 btn-outline-danger px-5">Add to
+                            Cart</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <a href="#" class="text-decoration-none"> -->
+                <div class="my-5 w-25 mx-auto py-1 bg-danger rounded-2">
+                    <h4 class="text-white text-center mt-1">
+                        <span class="border border-2 bg-white text-danger rounded-circle border-white px-2">1</span>
+                        <span class="border border-2 border-white rounded-circle px-2">2</span>
+                        <span class="border border-2 border-white rounded-circle px-2">3</span>
+                        <span class="border border-2 border-white rounded-circle px-2">4</span>
+                    </h4>
+                </div>
+            <!-- </a> -->
+        </div>
+    </section>
+
+
+
+    <footer class="bg- ">
+        <div class="container-fluid px-0">
+            <div
+                class="col-lg-12 col-md-12 col-sm-12 col-12 footer-bg  position-relative overflow-hidden justify-content-center d-flex align-items-start">
+                <div class="container-md z-3  ">
+                    <div class="row mt-3 g-3 flex-wrap">
+                        <div class="col-lg-4">
+                            <img src="assets/images/logo1.png" height="250px" width="80%" alt="">
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                            <div class="footer-column">
+                                <div class="footer-column-title">
+                                    <h4 class="text-black fw-bold">Quick Links</h4>
+                                </div>
+                                <div class="footer-column-items">
+                                    <ul class=" border-0 list-unstyled">
+                                        <li class="nav-item "><a class="nav-link fw-light" href="#">Home
+                                            </a>
+                                        </li>
+                                        <li class="nav-item "><a class=" nav-link fw-light" href="#">Products
+                                            </a>
+                                        </li>
+                                        <li class="nav-item "><a class=" nav-link fw-light" href="#">Contact Us
+                                            </a>
+                                        </li>
+                                        <li class="nav-item "><a class=" nav-link fw-light" href="#">About Us
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                            <div class="footer-column">
+                                <div class="footer-column-title">
+                                    <h4 class="text-black fw-bold">Contact Us</h4>
+                                </div>
+                                <div class="footer-column-items">
+                                    <ul class=" border-0 list-unstyled">
+                                        <li class="nav-item "><a class="nav-link fw-light" href="#">Address : <span
+                                                    class="text-danger fs-5"> #122 st.232B Toul Kouk, Phnom Penh City,
+                                                    Cambodia</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item "><a class="nav-link fw-light" href="#">Phome : <span
+                                                    class="text-danger fs-5"> +855 972829387</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item "><a class="nav-link fw-light" href="#">Email : <span
+                                                    class="text-danger fs-5"> bora123@gmail.com</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 py-1 text-center" style="background-color: green;">
+                <h6 class="text-white">@ចម្លងដោយបុីអេសខេឃ្លីន 2024</h6>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/tom-select.complete.min.js"></script>
+
+</body>
+
+</html>
